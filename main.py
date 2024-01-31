@@ -7,7 +7,7 @@ import numpy as np
 
 # metoda przyjmuje obraz i zwraca ilość osób
 def process_image(image) -> int:
-    # detekcja osób algorytmem hog
+    # detekcja osób algorytmem HOG
     hog = cv2.HOGDescriptor()
     hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
